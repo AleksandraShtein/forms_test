@@ -1,0 +1,266 @@
+
+/*Главные настройки*/
+    main {
+        min-width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+        min-height: 100%;
+        background-color: #f5f5f5;
+    }
+
+    #myform {
+        width: 1024px;
+        height: 768px;
+        background-color: white;
+        margin: 2% auto;
+        background-position: center;
+        box-shadow: 10px 40px 50px -20px #d4d4d4;
+        border-radius: 3%;
+        box-sizing: border-box;
+
+    }
+
+    .basisone {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        box-sizing: border-box;  
+    }
+
+    #basistwo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 50%;
+        /*height: 768px;*/
+        padding-left: 5%;
+    }
+
+/*Блок с картинкой и главным заголовком*/
+    
+
+    .mountains {
+        width: 450px;
+        height: 768px;
+        border-radius: 3% 0 0 3%;
+        box-shadow: 10px 40px 50px -20px #d4d4d4;
+    }
+    
+    .headtitle {
+        font-family: 'Orelega One', cursive;
+        font-size: 30px;
+        color: #26bfcc;
+        padding-top: 10px;
+        flex-grow: 1;
+        text-shadow: 0 0 1px black;
+        margin-bottom: 30px;
+    }
+
+
+/*Блок с именем, фамилией, почтой и телефоном*/
+    
+    .allinformation1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 450px;  
+    }
+
+    .headallinformation1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        box-sizing: border-box;
+        /*margin-bottom: 5%;*/
+    }
+
+    .allinformation2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 450px;  
+    }
+
+    .headallinformation2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-sizing: border-box;
+        margin-bottom: 5%;
+    }
+
+    .information {
+        height: 35px;
+        width: 200px;
+        border: 1px solid #D6D3D1;
+        border-radius: 5px;
+        margin-top: 6px;
+        margin-bottom: 6px;
+       
+    }
+
+    .information:focus {
+        outline-color: #26bfcc;
+        
+    }
+
+    .textblock {
+        font-family: 'Merriweather', serif;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    
+
+/*Блок с адресной информацией*/
+
+    #adress {
+        font-size: 20px;
+        color: black;
+        padding-top: 10px;
+        flex-grow: 1;
+        font-weight: 700;
+        font-family: 'Merriweather', serif;
+        margin-bottom: 30px;
+    }
+
+    .country {
+        border-radius: 5px;
+        width: 130px;
+        height: 40px;
+        border: 1px solid #D6D3D1;
+        font-family: 'Merriweather', serif;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .country:focus {
+        outline-color: #26bfcc;
+    }
+
+    .adressinformation {
+        border-radius: 5px;
+        width: 150px;
+        height: 35px;
+        border: 1px solid #D6D3D1;
+        margin-top: 6px;
+    }
+
+    .adressinformation:focus {
+        outline-color: #26bfcc;
+    }
+    
+    .mailadress {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 900px;
+        margin-bottom: 40px;
+    }
+
+    #TC {
+        margin-right: 6px;
+    }
+
+    #TT {
+        margin-right: 6px;
+    }
+
+    .deliveryadress {
+        width: 700px;
+        margin-bottom: 20px;
+    }
+
+    #marginoption {
+        margin-top: 6px;
+    }
+
+    .deliveryinformation:focus {
+        outline-color: #26bfcc;
+    }
+
+    .deliveryinformation {
+        border-radius: 5px;
+        width: 450px;
+        height: 35px;
+        border: 1px solid #D6D3D1;
+    }
+
+    .headadressinformation2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        box-sizing: border-box;
+        width: 480px;
+    }
+
+    .headbutton {
+        width: 450px;
+        background-color: #26bfcc;
+        border: none;
+        border-radius: 5px;
+        height: 35px;
+        color: white;
+        font-family: 'Merriweather', serif;
+        font-size: 14px;
+        margin-bottom: 40px;
+    }
+
+    .headbutton:hover {
+        background-color: #209ea9;
+    }
+
+
+    /*Блок с чекбоксами*/
+    .check {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-sizing: border-box;
+        margin-bottom: 15px;
+        margin-top: 25px;
+    }
+
+    .labelcheck {
+        margin-bottom: 10px;
+        appearance: none;
+        width: 15px;
+        height: 15px;
+        border: 1px solid #D6D3D1;
+    }
+
+    .labelcheck:checked {
+        background-color: #26bfcc;
+        background-image: url('chekicon.png.png');
+        background-size: contain;
+        background-position: center;
+    }
+
+    #notification {
+        font-size: 12px;
+        color: #737373;
+        padding-top: 6px;
+        flex-grow: 1;
+        font-weight: 300;
+        font-family: 'Merriweather', serif;
+        width: 470px;
+        line-height: 1.5;
+    }
+
+    #textcheck {
+        margin-left: 5px;
+    }
+
+    #maincheck {
+        display: flex;
+        flex-direction: row;
+        width: 400px;
+    }
+
+

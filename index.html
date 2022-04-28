@@ -2,14 +2,142 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>Мой лендинг</title>
+        <title>Формы</title>
         <link rel="stylesheet" type="text/css" href="reset.css" />
         <link rel="stylesheet" type="text/css" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     </head>
 
     <body>
 
+     <main>
+        <div id="myform">
+            
+    <!--Блок с картинкой и главным заголовком-->
+        <div class="basisone">
+                <img alt="горы" src="https://images.pexels.com/photos/2662086/pexels-photo-2662086.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="mountains" />
+            
+            
+            <div id="basistwo">
+                    <p class="headtitle">Регистрация</p>
+    
+    <!--Блок с именем и фамилией-->
+                <div class="allinformation1">
+                    <div class="headallinformation1">
+                        <form action="https://www.bit-by-bit.ru/form-submit"></form>
+                            <label for="name" class="textblock">Имя</label>
+                            <input type="text" class="information" id="name"/>
+                        </form>
+                    </div>
+                    
+                    <div class="headallinformation1">
+                        <form action="https://www.bit-by-bit.ru/form-submit"></form>
+                            <label for="surname" class="textblock">Фамилия</label>
+                            <input type="text" class="information" id="surname"/>
+                        </form>
+                    </div>
+                    
+                </div>
+                
+                
+    <!--Блок с почтой и телефоном-->
+                <div class="allinformation2">
+                    <div class="headallinformation2">
+                        <form action="https://www.bit-by-bit.ru/form-submit"></form>
+                            <label for="email" class="textblock">Email</label>
+                            <input type="text" class="information" id="email"/>
+                        </form>
+                    </div>
+                    
+                    <div class="headallinformation2">
+                        <form action="https://www.bit-by-bit.ru/form-submit"></form>
+                            <label for="telephone" class="textblock">Телефон</label>
+                            <input type="text" class="information" id="telephone"/>
+                        </form>
+                    </div>
+                </div>            
+    
+    
+    
+    <!--Блок с адресной информацией-->
+                <p id="adress">Адрес доставки</p>
 
+                <div class="mailadress">
+
+                    <div class="headadressinformation2">
+                        <form id="TC" action="https://www.bit-by-bit.ru/form-submit">
+                            <label for="country" class="textblock">Страна</label>
+                            <select class="country" id="marginoption">
+                                <option value=”Russian”>Россия</option>
+                                <option value=”Belarus”>Белорусь</option>
+                                <option value=”Kazakhstan”>Казахстан</option>
+                                <option value=”Poland”>Польша</option>
+                            </select>
+                        </form>  
+                        
+                        <form id="TT" action="https://www.bit-by-bit.ru/form-submit">
+                                <label for="town" class="textblock">Город</label>
+                                <input type="text" class="adressinformation" id="town" />
+                        </form>
+
+                        <form id="TM" action="https://www.bit-by-bit.ru/form-submit">
+                                <label for="index" class="textblock" id="marginindextown">Почтовый индекс</label>
+                                <input type="text" class="adressinformation" id="index" />
+                        </form>
+                    </div>
+                </div>
+
+                <div class="deliveryadress">
+                    <form action="https://www.bit-by-bit.ru/form-submit">
+                            <label for="delivery" class="textblock">Адрес доставки (улица, дом, квартира)</label>
+                            <input type="text" class="deliveryinformation" id="marginoption" />
+                    </form>  
+                </div>
+
+                <p id="adress">Уведомлять об акциях и скидках</p>
+                <p id="notification">Мы не будем отправлять спам, но напишем, когда поступят новые товары или будет большая распродажа.</p>
+
+    <!--Блок с чекбоксами-->
+                <div class="check">
+                    <form id="maincheck" action="https://www.bit-by-bit.ru/form-submit">
+                        <input class="labelcheck" name="conectionone" type="checkbox" value="emailcheck"/>
+                        <label id="textcheck" for="conectionone">По Email</label>
+                    </form>
+    
+                    <form id="maincheck" action="https://www.bit-by-bit.ru/form-submit">
+                        <input class="labelcheck" name="conectiontwo" type="checkbox" value="smscheck"/>
+                        <label id="textcheck" for="conectiontwo">По SMS</label>
+                    </form>
+    
+                    <form id="maincheck" action="https://www.bit-by-bit.ru/form-submit">
+                        <input class="labelcheck" name="conectionthird" type="checkbox" value="pushcheck"/>
+                        <label id="textcheck" for="conectionthird">Push-уведомления в приложении</label>
+                    </form>
+                </div>
+
+                <form action="https://www.bit-by-bit.ru/form-submit">
+                        <button type="submit" class="headbutton">Создать аккаунт</button>
+                </form>
+
+            </div>
+
+      
+    </div>    
+    </div>
+
+
+
+     </main>
+     
     </body>
 
 </html>    
